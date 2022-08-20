@@ -1,3 +1,43 @@
+@import './styles/Roboto';
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+html{
+    font-size: 10px;
+}
 body{
-    background-color: red;
+    font-size: 1.6rem;
+    background-color: rgb(237, 207, 140);
+    // background-image: linear-gradient(to bottom, #d4f1f9 0%, #75aedc 25%, #94c6e3 50%, #9ed8f0 75%, #5287aa 100%);
+    background-image: linear-gradient(to bottom, #2b2b2b 0%, #232323 100%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+.page{
+    font-size: 2.4rem;
+    padding: 2em;
+    background: white;
+    text-align: center;
+    max-width: 1000px;
+    -webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.25); 
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.25);
+    border-radius: 1em;
+}
+.logo{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 2.4rem;
+    background-image: url(assets/kompa_glacier.svg);
+    background-repeat: no-repeat;
+    transition: all 350ms ease;
+    &:hover{
+        background-image: url(assets/kompa_bleu.svg);
+    }
 }
